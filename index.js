@@ -15,7 +15,7 @@ const start = async () => {
     const bot = new Client()
     await bot.connect()
 
-    // 🔹 Activation de la vue automatique des statuts
+    // 🔹 Activation auto vue statuts
     if (AUTO_STATUS_VIEW) {
       logger.info("AUTO_STATUS_VIEW activé : lecture automatique des statuts.")
       bot.on('status-update', async (update) => {
